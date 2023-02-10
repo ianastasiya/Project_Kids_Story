@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  outline: none;
+}
+
+/*Блок о руководителе*/
+.centr {
+  margin: 7px;
+  min-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 90%;
+  grid-gap: 5px;
+}
+
+/*Заголовок блока о руководителе*/
+.centr__title {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+/*Фото руководителя*/
+.centr__img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+/*Информация о руководителе*/
+.centr__text {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*Блок с видео*/
+.section-video {
+  margin: 7px;
+  min-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  grid-gap: 10px;
+}
+
+/*Заголовок блока с видео*/
+.section-video__title {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+/*Видео ролики*/
+.section-video__video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*Карта*/
+.map {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+}
