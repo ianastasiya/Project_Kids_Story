@@ -1,3 +1,5 @@
-nav .menu:hover{
-    color: violet
+#logo {
+    width: 100px;
+    position: absolute;
+    
 }
