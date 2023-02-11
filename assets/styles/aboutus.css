@@ -17,6 +17,8 @@
 /*Заголовок блока о руководителе*/
 .centr__title {
   grid-area: 1 / 1 / 2 / 3;
+  padding: 15px;
+  color: rgb(82, 82, 219);
 }
 
 /*Фото руководителя*/
@@ -32,6 +34,17 @@
 .centr__text {
   width: 100%;
   max-width: 100%;
+  padding: 15px;
+}
+
+/*Заголовок информации о руководителе*/
+.centr__text_title {
+  color: rgb(82, 82, 219);
+}
+
+/*Слоган*/
+.centr__text_slogan {
+  color: red;
 }
 
 /*Блок с видео*/
@@ -42,12 +55,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10% 90%;
-  grid-gap: 10px;
 }
 
 /*Заголовок блока с видео*/
 .section-video__title {
   grid-area: 1 / 1 / 2 / 4;
+  padding: 15px;
+  color: rgb(82, 82, 219);
 }
 
 /*Видео ролики*/
@@ -57,6 +71,13 @@
   object-fit: cover;
   border-radius: 20px;
   padding: 10px;
+}
+
+/*Допоплнительная информация*/
+.section-information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
 }
 
 /*Карта*/
