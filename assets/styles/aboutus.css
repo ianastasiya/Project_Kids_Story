@@ -4,26 +4,86 @@
 }
 
 /*Блок о руководителе*/
-.section-centr {
+.centr {
   margin: 7px;
   min-width: 100%;
   width: 100%;
-  min-height: auto;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 10% 90%;
+  grid-gap: 5px;
 }
 
 /*Заголовок блока о руководителе*/
-.section-centr__title {
+.centr__title {
   grid-area: 1 / 1 / 2 / 3;
+  padding: 15px;
+  color: rgb(82, 82, 219);
 }
 
 /*Фото руководителя*/
-.section-centr__img {
+.centr__img {
   width: 100%;
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px;
   padding: 15px;
+}
+
+/*Информация о руководителе*/
+.centr__text {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+/*Заголовок информации о руководителе*/
+.centr__text_title {
+  color: rgb(82, 82, 219);
+}
+
+/*Слоган*/
+.centr__text_slogan {
+  color: red;
+}
+
+/*Блок с видео*/
+.section-video {
+  margin: 7px;
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;
+}
+
+/*Заголовок блока с видео*/
+.section-video__title {
+  grid-area: 1 / 1 / 2 / 4;
+  padding: 15px;
+  color: rgb(82, 82, 219);
+}
+
+/*Видео ролики*/
+.section-video__video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*Допоплнительная информация*/
+.section-information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+/*Карта*/
+.map {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 20px;
 }
