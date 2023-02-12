@@ -1,9 +1,22 @@
-h1,h5 {color: #8081BD;
+h1,h5 {
+    color: #8081BD;
+    font-family: 'Montserrat','Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
 }
 
-.btn btn-primary{
-    padding: 5px;
-    border-radius: 1px solid #8081BD;
-    ;
+.btn btn-outline-secondary{
+
+    
+    color: #334155;
+    box-sizing: border-box;
+    border: 1px solid #8081BD;
+    border-radius: 30px;
+  
+
 
 }
