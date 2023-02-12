@@ -1,9 +1,95 @@
-h1,h5 {color: #8081BD;
+h1, h5 {
+    color: #8081BD;
+    font-family: 'Montserrat','Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 
-.btn btn-primary{
-    padding: 5px;
-    border-radius: 1px solid #8081BD;
-    ;
+.card-img-top{
+    width: 100%;
+    height: 225; 
+}
 
+.btn btn-outline-secondary{
+    
+    color: #334155;
+    box-sizing: border-box;
+    border: 1px solid #8081BD;
+    border-radius: 30px;
+
+}
+
+/* .btn btn-danger{
+    box-sizing: border-box;
+    background: #EA5D4A;
+    border-radius: 12px;
+    padding: 10px;
+} */
+
+
+
+.news{
+    text-align: center;
+    margin: 80px;
+    color:#334155;
+    text-decoration:none;
+    font-weight: bold;
+}
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+    background: #79BC6D;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+@media (max-width: 1024px) {
+    .cta {
+    background-attachment: scroll;
+    }
+}
+@media (max-width: 830px) {
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/*@media (min-width: 769px) {
+    .btn-warning{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+}
+*/
+
+/*--------------------------------------------------------------
+# Submit Form
+--------------------------------------------------------------*/
+#phone{
+    border-radius: 12px;
+}
+
+.map{
+    margin-top: 20px;
+}
+
+.form-check-label{
+    color:#ffffff;
 }
