@@ -51,25 +51,40 @@ h1, h5 {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    position: relative;
-    width: 1804px;
-    height: 385px;
-    left: 57px;
     top: 1589.51px;
+    padding: 120px 0;
     background: #79BC6D;
     border-radius: 20px
 }
 
 .cta h3 {
     color: #fff;
+    width: 589px;
+    height: 98px;
+    left: 250px;
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Montserrat','Montserrat Alternates', sans-serif;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
 }
 
 .cta p {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    font-family: 'Montserrat','Montserrat Alternates', sans-serif;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: 442px;
+    height: 48px;
+    left: 250px;
+    top: 1762.51px;
+    font-style: normal;
+
 }
 @media (max-width: 1024px) {
     .cta {
@@ -83,6 +98,12 @@ h1, h5 {
     }
 }
 
+.img-responsive{
+    width: 290px;
+    height: 448px;
+    left: 1541px;
+    
+}
 /*@media (min-width: 769px) {
     .btn-warning{
     display: flex;
@@ -95,14 +116,15 @@ h1, h5 {
 /*--------------------------------------------------------------
 # Submit Form
 --------------------------------------------------------------*/
-#phone{
-    border-radius: 12px;
-}
 
 .map{
     margin-top: 20px;
 }
-
+.col-lg-3{
+    display:flex;
+    border-radius: 12px;
+    
+}
 .form-check-label{
     color:#ffffff;
 }
