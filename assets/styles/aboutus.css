@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+main {
+  position: relative;
+}
+
 /*Блок о руководителе*/
 .centr {
   margin: 7px;
@@ -124,11 +128,19 @@
   margin-top: 40px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #f0e87b;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  position: relative;
   overflow: hidden;
+  /*background-image: url(assets/images/yellow_wave.png);
+  background-position: center;*/
+}
+
+.background__img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -30lvh;
 }
 
 /*Раздел доп. информации*/
