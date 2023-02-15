@@ -1,4 +1,4 @@
-
+/*карусель*/
 .test{
     color: rgb(23, 216, 216);
 }
@@ -57,43 +57,31 @@
 }
 /*картинка*/
 
-.otazka{
+.form{
     position: absolute;
-    top:860px;
-    left: 64px;
-
+    top: 860px;
+    left: 30px;
+   
 }
-.telefon{  
-    position: absolute;
-    top: 930px;
-    left: 67px;
-}
-.btn1{
-    position: absolute;
-    top:1000px;
-    left: 70px;
-    border-radius: 10px;
-    font-size: 20px;
-    color:white;
-    background-color: red;
-    border: none;
-
-
-}
-.btn1:hover{
-    background-color: green;
-}
-.btn2{
-    position: absolute;
-    top: 1090px;
-    left: 50px;
-}
-
-
 .kluk{
     width:100%;
     height:max-content;
 
 }
+.parent{
+    display: flex;
 
+   
+}
+.item{
+    border-radius: 15px;
+    background-color: #e87746;
+    display: flex;
+   
+
+  
+}
+
+
+    
 
