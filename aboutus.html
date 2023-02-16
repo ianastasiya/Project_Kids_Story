@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/aboutus.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -54,34 +60,40 @@
           alt="Foto our director"
         />
         <div class="centr__text">
-          <span class="centr__text centr__text_title">
+          <span class="centr__text-title">
             <h3>Руководитель</h3>
             <h3>Kids story</h3>
-            <h4>ЖУРАВЛЕВ</h4>
           </span>
-          <h4>Дмитрий Анатольевич</h4>
-          <p>Педагог-психолог</p>
-          <p>Стаж 11 лет</p>
-          <p>
-            Мы создали пространство, в котором каждый ребенок проявляет и
-            раскрывает себя , развивает индивидуальные особенности и таланты.
-          </p>
-          <p>
-            <span class="centr__text centr__text_slogan"
-              >Наша задача - сделать так, чтобы каждый день в Kids story был
-              счастливым.
-            </span>
-          </p>
-          <p>
-            - Английский детский клуб. Для детей с 2 до 7 лет. Погружение в
-            языковую среду, собственная кухня, охраняемая огороженная
-            территория, медицинский кабинет, соляная пещера.
-          </p>
-          <p>
-            - Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие
-            студии, творческие мастерские, спортивные секции.
-          </p>
-          <p>- Kids story - "ежедневное развитие детей на 360 градусов".</p>
+          <p class="centr__text-surname">ЖУРАВЛЕВ</p>
+          <p class="centr__text-name">Дмитрий Анатольевич</p>
+
+          <p class="centr__text-sv">Педагог-психолог</p>
+          <p class="centr__text-sv">Стаж 11 лет</p>
+          <br />
+          <span class="centr__text-piece">
+            <p>
+              Мы создали пространство, в котором каждый ребенок проявляет и
+              раскрывает себя , развивает индивидуальные особенности и таланты.
+            </p>
+            <p>
+              <span class="centr__text-slogan"
+                >Наша задача - сделать так, чтобы каждый день в Kids story был
+                счастливым.
+              </span>
+            </p>
+            <ul>
+              <li>
+                Английский детский клуб. Для детей с 2 до 7 лет. Погружение в
+                языковую среду, собственная кухня, охраняемая огороженная
+                территория, медицинский кабинет, соляная пещера.
+              </li>
+              <li>
+                Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие
+                студии, творческие мастерские, спортивные секции.
+              </li>
+              <li>Kids story - "ежедневное развитие детей на 360 градусов".</li>
+            </ul>
+          </span>
         </div>
       </section>
       <!--section centr and-->
@@ -105,8 +117,11 @@
         />
       </section>
       <!--section video and-->
+      <div class="background__img">
+        <img src="assets/images/yellow_wave.png" alt="yellow_wave" />
+      </div>
       <!--section with additional information start-->
-      <section class="section-information">
+      <article class="section-information">
         <div class="section-information__item">
           <div
             class="section-information__icon section-information__icon_orange"
@@ -187,24 +202,28 @@
             особенностей ребенка
           </p>
         </div>
-      </section>
+      </article>
       <!--section with additional information and-->
       <!--Form with questions start-->
       <div class="questions">
-        <div class="questions__text">
-          <p>Остались вопросы? Получите бесплатную консультацию</p>
-          <p>
-            Оставьте телефон и мы перезвоним и расскажем все подробности о
-            филиале
-          </p>
-          <button>+7_ _ _-_ _ _-_ _-_ _</button>
-          <button>Отправить</button>
-
-          <div>
-            <img src="assets/images/white_circle.png" alt="white circle" />
-            Я принимаю условия пользовательского соглашения
+        <section class="questions_section">
+          <div class="questions__text">
+            <section class="questions__body">
+              <h2>Остались вопросы? Получите бесплатную консультацию</h2>
+              <p>
+                Оставьте телефон и мы перезвоним и расскажем все подробности о
+                филиале
+              </p>
+              <button>+7_ _ _-_ _ _-_ _-_ _</button>
+              <button>Отправить</button>
+              <form class="questions__activ">
+                <label for="circle"></label>
+                <input type="radio" id="circle" />
+                Я принимаю условия пользовательского соглашения
+              </form>
+            </section>
           </div>
-        </div>
+        </section>
         <img class="questions__img" src="assets/images/Girl.png" alt="Girl" />
       </div>
       <!--Form with questions and-->
@@ -220,11 +239,74 @@
     </main>
     <!--main and-->
     <!--footer start-->
-    <div class="footer">
-      <div class="logo-footer">
-        <img src="assets/images/logo.png" alt="logotip" />
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+         <sup><img xmlns src="assets/images/logo.png" width="200" height="50" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></></sup>
+          <small class="d-block mb-1 text"><b> <img xmlns src="assets/images/telephone.png"> +7 495 123 3425</b></small>
+          <small class="d-block mb-3 text-muted"><b>dir@kidsstory</b></small>
+          <small class="d-block mb-2 text-muted"><b>Москва, ул.Муравская д.38,к.1</b></small>
+          <small class=" test d-block mb-4 "><b>ЖК Мир Митино М.Пятницкое шоссе</b></small>
+          <img xmlns src="assets/vector_2.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
+          <img xmlns src="assets/vector_3.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
+         
+         
+        </div>
+        <div class="col-6 col-md">
+          <h5>О нас</h5>
+          <ul class=" list-unstyled text-small ">
+            <li><a class="link-secondary " href="#">О центре</a></li>
+            <li><a class="link-secondary " href="#">Документы</a></li>
+            <li><a class="link-secondary " href="#">Родителям</a></li>
+            <li><a class="link-secondary " href="#">Питание</a></li>
+            <li><a class="link-secondary " href="#">Новости</a></li>
+            <li><a class="link-secondary " href="#">3Dтур</a></li>
+            <li><a class="link-secondary " href="#">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Расписание</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Расписание основное</a></li>
+            <li><a class="link-secondary" href="#">Дополнительные услуги</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Программа</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Группа(2-3 года)</a></li>
+            <li><a class="link-secondary" href="#">Группа(3-5 лет)</a></li>
+            <li><a class="link-secondary" href="#">Группа(5-7 лет)</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Фото и видео</h5>
+         
+        </div>
+        <div class="col-6 col-md">
+          <h5>Команда</h5>
+         
+        </div>
+        <div class="col-6 col-md">
+          <h5>Контакты</h5>
+          
+        </div>
       </div>
-    </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">Copyrights:Kids Story 2021</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img  src="assets/images/logo.png" class="bi me-2" width="100" height="30"><use xlink:href="#bootstrap"></use></>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Дизайн ZHURAVLEV</a></li>
+          </ul>
+          <img xmlns src="assets/vector.jpg" width="200" height="60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
+        </div>
+    </footer>
     <!--footer and-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

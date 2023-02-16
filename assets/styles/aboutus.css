@@ -1,6 +1,12 @@
 * {
   padding: 0;
   outline: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+}
+
+main {
+  position: relative;
 }
 
 /*Блок о руководителе*/
@@ -12,17 +18,22 @@
   grid-template-columns: 30% 70%;
   grid-template-rows: 10% 90%;
   grid-gap: 5px;
+  color: #334155;
 }
 
 /*Заголовок блока о руководителе*/
 .centr__title {
   grid-area: 1 / 1 / 2 / 3;
   padding: 15px;
-  color: rgb(82, 82, 219);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #8081bd;
 }
 
 /*Фото руководителя*/
 .centr__img {
+  grid-area: 2 / 1 / 3 / 2;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -32,18 +43,57 @@
 
 /*Информация о руководителе*/
 .centr__text {
+  grid-area: 2 / 2 / 3 / 3;
   width: 100%;
   max-width: 100%;
-  padding: 15px;
+  padding: 10px;
+  margin-bottom: 0;
 }
 
 /*Заголовок информации о руководителе*/
-.centr__text_title {
-  color: rgb(82, 82, 219);
+.centr__text-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #8081bd;
+}
+
+/*Фамилия руководителя*/
+.centr__text-surname {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #8081bd;
+}
+
+/*Имя и отчество руководителя*/
+.centr__text-surname {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*SV руководителя*/
+.centr__text-sv {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+
+/*Основной текст*/
+.centr__text-piece {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /*Слоган*/
-.centr__text_slogan {
+.centr__text-slogan {
   color: red;
 }
 
@@ -54,6 +104,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 10% 90%;
+  overflow: hidden;
 }
 
 /*Заголовок блока с видео*/
@@ -77,10 +128,19 @@
   margin-top: 40px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #f0e87b;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  /*background-image: url(assets/images/yellow_wave.png);
+  background-position: center;*/
+}
+
+.background__img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -30lvh;
 }
 
 /*Раздел доп. информации*/
@@ -124,22 +184,53 @@
 }
 /*Форма задать вопрос*/
 .questions {
-  display: grid;
+  background-color: #e77cd9;
+  display: flex;
+  overflow: hidden;
+
+  /* display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 4fr 1fr;
   background-color: #e77cd9;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;*/
+}
+
+.questions_section {
+  flex: 0 0 100%;
+  display: flex;
 }
 
 .questions__text {
-  grid-area: 2 / 1 / 3 / 2;
+  max-width: 1844px;
+  padding: 0px 20px;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  /*grid-area: 2 / 1 / 3 / 2;*/
+}
+
+.questions__body {
+  width: 50%;
+  padding: 10px 0 10px 0;
 }
 
 .questions__img {
+  max-width: 100%;
+  position: relative;
+  flex: 0 0 50%;
+  transform: translate(-100%, 0px);
+  /*grid-area: 1 / 2 / 4 / 3;*/
+}
+
+.questions__img img {
+  position: absolute;
   width: 100%;
-  grid-area: 1 / 2 / 4 / 3;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 /*Карта*/
@@ -152,4 +243,5 @@
   background-size: cover;
   object-fit: cover;
   display: block;
+  overflow: hidden;
 }
