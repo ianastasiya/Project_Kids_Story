@@ -22,8 +22,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
 integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
 </head>
-<body>
-  
+<body
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
@@ -33,7 +32,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
             
         </div>
     <div class="row"> 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-4 col-md-6 d-flex">
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_1.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -46,7 +45,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
             </div>
         </div>   
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-4 col-md-6 d-flex">
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_2.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -59,7 +58,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
             </div>
         </div>   
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch"> 
+        <div class="col-lg-4 col-md-6 d-flex"> 
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_3.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -72,7 +71,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">  
+        <div class="col-lg-4 col-md-6 d-flex">  
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_4.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -85,7 +84,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
             </div>
         </div> 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">    
+        <div class="col-lg-4 col-md-6 d-flex">    
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_5.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -98,7 +97,7 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">     
+        <div class="col-lg-4 col-md-6 d-flex">     
             <div class="card"> 
                 <img class="card-img-top" src="assets/images/news_image_6.png" alt="First news image"> 
                 <div class="card-body"> 
@@ -123,13 +122,12 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
 <section id="cta" class="cta">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center text-lg-start">
+            <div class="col-lg-5 order-1 text-center text-lg-start">
                 <h3>Есть вопросы? Получите <br>бесплатную консультацию</h3>
                 <p>Оставьте телефон и мы перезвоним <br>и расскажем все подробности о филиале</p>
-            </div>
 
             <form class="form-inline">
-                <div class="col-lg-3 cta-btn-container">
+                <div class="col-lg-12 cta-btn-container d-flex">
                     <input type="tel" class="form-control" name="phone" id="phone" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _"
                     data-rule="minlen:10" data-msg="Please enter 10 chars">
                     <button type="submit" class="btn btn-warning">ОТПРАВИТЬ</button>
@@ -143,8 +141,9 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
                 </div>
                 
             </form>
-            <div class="col-lg-3 cta-btn-container">
-               <img class="img-responsive" src="assets/images/boy_news.png" alt="Boys_news">
+            </div>
+            <div class="col-lg-7 order-2">
+                <img class="img-responsive" src="assets/images/boy_news.png" alt="Boys_news">
             </div>
         </div>
     </div>
@@ -154,12 +153,16 @@ integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vx
     <!--Map start-->
     <div class="map">
         <img
-        class="map"
+        class="map" 
         src="assets/images/Map.png"
         alt="How to find us on the map"
-        />
+        /> 
     </div>
+    
     <!--Map end-->
 </section>  
+<section>
+    <
+</section>
 </body>
 </html>
