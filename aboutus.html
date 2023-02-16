@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/aboutus.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -150,7 +151,7 @@
       <!--section video and-->
       <!--background yellow wave start-->
       <div class="background__img">
-        <img src="assets/images/yellow_wave.png" alt="yellow_wave"/>
+        <img class="background__img-wave" src="assets/images/yellow_wave.png" alt="yellow_wave"/>
       </div>
       <!--background yellow wave and-->
       <!--section with additional information start-->
@@ -247,8 +248,10 @@
                 Оставьте телефон и мы перезвоним и расскажем все подробности о
                 филиале
               </p>
-              <button>+7_ _ _-_ _ _-_ _-_ _</button>
-              <button>Отправить</button>
+              <div class="questions__shell-button">
+                <button class="questions__button questions__button_tel">+7_ _ _-_ _ _-_ _-_ _</button>
+                <button class="questions__button questions__button_send">Отправить</button>
+              </div>
               <form class="questions__activ">
                 <label for="circle"></label>
                 <input type="radio" id="circle" />
@@ -257,7 +260,9 @@
             </section>
           </div>
         </div>
-        <img class="questions__img" src="assets/images/Girl.png" alt="Girl" />
+        <div class="questions__img">
+          <img class="questions__img" src="assets/images/girl_parents.png" alt="Girl" />
+        </div>
       </div>
       <!--Form with questions and-->
       <!--Map start-->

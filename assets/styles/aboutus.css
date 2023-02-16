@@ -14,10 +14,6 @@
   width: 96%;
 }
 .adress {
-  /*display: grid;
-  grid-template-columns: minmax(80%, min-content) minmax(35%, min-content) minmax(45%, min-content);
-  max-width: 25vw;
-  position: relative;*/
   display: flex;
   justify-content: flex-end;
   gap: 1%;
@@ -50,14 +46,6 @@
 }
 
 .header-menu {
-  /*display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: auto; 
-  gap: 5px;
-  justify-content:space-around;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  min-height: 14px;*/
   max-width: 549px;
   display: flex;
   gap: 1%;
@@ -69,16 +57,6 @@
 a {
   text-decoration: none;
 }
-/*.dropdown-content {
-  display:none;
-  position: absolute;
-  z-index: 1; 
-}
-.dropbtn{
-  font-family: 'Montserrat', sans-serif;
-  min-height: 14px;
-  text-align: center;
-}*/
 
 .menu_drop {
   display: flex;
@@ -86,7 +64,7 @@ a {
 }
 
 .nav_button {
-  background-image: url(/assets/pictures/Vector\\.png);
+  background-image: url(/assets/images/Vector_check.png);
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -141,12 +119,7 @@ a {
 .header-button:hover {
   background-color: #8b8dc6;
 }
-/*.backcall{
-  display: flex;
-  justify-content: end;
-  border: 1px solid black;
-  margin-right: 20%;
-}*/
+
 .backcall-text {
   color: #ea5d4a;
   font-family: Montserrat, sans-serif;
@@ -271,7 +244,6 @@ main {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 90%;
   overflow: hidden;
 }
 
@@ -279,6 +251,7 @@ main {
 .section-video__title {
   grid-area: 1 / 1 / 2 / 4;
   padding: 15px;
+  margin-bottom: 10px;
   color: rgb(82, 82, 219);
 }
 
@@ -307,9 +280,14 @@ main {
 
 /*Фоновая картинка*/
 .background__img {
+  position: relative;
+}
+.background__img-wave {
   position: absolute;
   z-index: -1;
   margin-top: -30lvh;
+  max-width: 100%;
+  width: 100%;
 }
 
 /*Раздел доп. информации*/
@@ -356,6 +334,7 @@ main {
   background-color: #e77cd9;
   display: flex;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .questions_section {
@@ -369,7 +348,6 @@ main {
   margin: 0px 20px;
   display: flex;
   align-items: center;
-  /*grid-area: 2 / 1 / 3 / 2;*/
 }
 
 .questions__body {
@@ -377,12 +355,37 @@ main {
   padding: 10px 0 10px 0;
 }
 
+/*Обертка для кнопок*/
+.questions__shell-button {
+  display: flex;
+}
+
+/*Кнопка формы с вопросами*/
+.questions__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  border-radius: 50px;
+}
+
+.questions__button_tel {
+  background: #ffffff;
+}
+
+.questions__button_send {
+  color: #ffffff;
+  background: #f6b31f;
+}
+
+/*Картинка формы с вопросами*/
 .questions__img {
   max-width: 100%;
   position: relative;
   flex: 0 0 50%;
-  transform: translate(-100%, 0px);
-  /*grid-area: 1 / 2 / 4 / 3;*/
+  transform: translate(-50%, 0px);
 }
 
 .questions__img img {
