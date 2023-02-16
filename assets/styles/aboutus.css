@@ -5,6 +5,173 @@
   font-style: normal;
 }
 
+/*Стили хедера от Натали*/
+.header {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 96%;
+}
+.adress {
+  /*display: grid;
+  grid-template-columns: minmax(80%, min-content) minmax(35%, min-content) minmax(45%, min-content);
+  max-width: 25vw;
+  position: relative;*/
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.adress-text,
+.adress-text1 {
+  color: #ea5d4a;
+  min-height: 12px;
+  font-size: 12px;
+}
+.adress-text2 {
+  color: #0e95d3;
+  min-height: 12px;
+  text-align: start;
+  font-size: 12px;
+}
+.logo-info,
+.backcall {
+  display: grid;
+  grid-template-columns: minmax(18%, min-content) minmax(47%, min-content) minmax(
+      35%,
+      min-content
+    );
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-menu {
+  /*display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto; 
+  gap: 5px;
+  justify-content:space-around;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 14px;*/
+  max-width: 549px;
+  display: flex;
+  gap: 1%;
+  justify-content: space-around;
+  font-size: 1vw;
+  margin-top: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+/*.dropdown-content {
+  display:none;
+  position: absolute;
+  z-index: 1; 
+}
+.dropbtn{
+  font-family: 'Montserrat', sans-serif;
+  min-height: 14px;
+  text-align: center;
+}*/
+
+.menu_drop {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_button {
+  background-image: url(/assets/pictures/Vector\\.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  height: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header-contact {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: minmax(60%, min-content) minmax(40%, min-content);
+  text-align: center;
+  align-items: center;
+}
+
+.phone {
+  background-color: #ea5d4a;
+  border-radius: 50%;
+  border: 2px solid #ea5d4a;
+}
+
+.number_fonts {
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #334155;
+  margin-left: 3%;
+}
+
+.header-phonnumber {
+  min-width: 55%;
+  display: grid;
+  grid-template-columns:
+    minmax(5%, min-content) minmax(65%, min-content) minmax(15%, min-content)
+    minmax(15%, min-content);
+}
+.header-button {
+  background-color: #8081bd;
+  border: 1px solid #8081bd;
+  border-radius: 20px;
+  color: white;
+  font-size: 1vw;
+  font-family: "Montserrat", sans-serif;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #8b8dc6;
+}
+/*.backcall{
+  display: flex;
+  justify-content: end;
+  border: 1px solid black;
+  margin-right: 20%;
+}*/
+.backcall-text {
+  color: #ea5d4a;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+
+.homepage {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.servicepage {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 25px;
+}
+
+.callback_link {
+  color: #ea5d4a;
+}
+
 main {
   position: relative;
 }
@@ -52,6 +219,7 @@ main {
 
 /*Заголовок информации о руководителе*/
 .centr__text-title {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
@@ -137,6 +305,7 @@ main {
   background-position: center;*/
 }
 
+/*Фоновая картинка*/
 .background__img {
   position: absolute;
   z-index: -1;
@@ -187,14 +356,6 @@ main {
   background-color: #e77cd9;
   display: flex;
   overflow: hidden;
-
-  /* display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 1fr 4fr 1fr;
-  background-color: #e77cd9;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;*/
 }
 
 .questions_section {
@@ -244,4 +405,91 @@ main {
   object-fit: cover;
   display: block;
   overflow: hidden;
+}
+
+/*Футер*/
+.test {
+  color: rgb(23, 216, 216);
+}
+
+/* для устройств с шириной области просмотра до 736px */
+@media screen and (max-width: 736px) {
+  /*Блок о руководителе*/
+  .centr {
+    margin: 5px;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  /*Заголовок блока о руководителе*/
+  .centr__title {
+    grid-area: auto;
+    padding: 5px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /*Фото руководителя*/
+  .centr__img {
+    grid-area: auto;
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  /*Информация о руководителе*/
+  .centr__text {
+    grid-area: auto;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  /*Заголовок информации о руководителе*/
+  .centr__text-title {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #8081bd;
+  }
+
+  /*Фамилия руководителя*/
+  .centr__text-surname {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #8081bd;
+  }
+
+  /*Имя и отчество руководителя*/
+  .centr__text-surname {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*SV руководителя*/
+  .centr__text-sv {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+
+  /*Основной текст*/
+  .centr__text-piece {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* для устройств с шириной области просмотра от 737px до 1023px */
+@media screen and (min-width: 737px) and (max-width: 1023px) {
 }
