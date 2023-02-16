@@ -43,22 +43,24 @@ h1, h5 {
     padding: 80px 0 20px 20px;
     background: #79BC6D;
     border-radius: 20px;
-    overflow: hidden;
-    display: flex;
+    position:relative;
+    display:flex;
     max-block-size: 630px;
 }
 
 .cta h3 {
     color: #fff;
-    width: 589px;
+    width: 120%;
+    /* width: 589px;
     height: 98px;
-    left: 250px;
+    left: 250px; */
     font-size: 40px;
     font-weight: 700;
     font-family: 'Montserrat','Montserrat Alternates', sans-serif;
     line-height: 49px;
-    display: fle;
+    display: flex;
     align-items: center;
+    position: inherit;
 
 }
 
@@ -70,13 +72,12 @@ h1, h5 {
     line-height: 24px;
     display: flex;
     align-items: center;
-    width: 442px;
-    height: 48px;
+    width: 85%;
+    /* height: 48px;
     left: 250px;
-    top: 1762.51px;
+    top: 1762.51px; */
     font-style: normal;
-
-
+    position:inherit;
 }
 
 @media (max-width: 50%) {
@@ -97,8 +98,12 @@ h1, h5 {
     width: 50%;
 }
 
-.img-responsive{
-    margin-top: -35%;
+.img-fluid{
+    /* margin-top: -35%; */
+    position: absolute; 
+    overflow: hidden;
+    margin-top: -23%;
+    margin-left: -5%;
     display: flex;
 }
 
@@ -120,5 +125,9 @@ h1, h5 {
 
 .form-check-label{
     color:#ffffff;
+}
+
+.link-secondary{
+    text-decoration:none;
 }
 
