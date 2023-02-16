@@ -8,53 +8,44 @@ h1, h5 {
     text-transform: uppercase;
 }
 
+.card{
+    margin-top: 30px;
+}
 .card-img-top{
-    width: 493px;
-    height: 300px; 
-    margin-bottom: 30px;
+    width: 50%;
+    height: 60%; 
+    
 }
 
-
-
-.btn btn-outline-secondary{
-    
+.btn .btn-outline-secondary{
     color: #334155;
     box-sizing: border-box;
     border: 1px solid #8081BD;
     border-radius: 30px;
-
 }
-
-/* .btn btn-danger{
-    box-sizing: border-box;
-    background: #EA5D4A;
-    border-radius: 12px;
-    padding: 10px;
-} */
-
-
 
 .news{
     text-align: center; 
     color:#334155;
     text-decoration:none;
     font-weight: bold;
-    border-radius: 50px;
     background-color: #ffffff;
-    height: 40px;
-    width: 314.65px;
-    top: 1493px;
-    left: 803px;
+    height: 50%;
+    width: 60%;
+    margin: 30px;
 
 }
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    top: 1589.51px;
-    padding: 120px 0;
+    margin: 5px 50px 30px 50px;
+    padding: 80px 0 20px 20px;
     background: #79BC6D;
-    border-radius: 20px
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    max-block-size: 630px;
 }
 
 .cta h3 {
@@ -66,7 +57,7 @@ h1, h5 {
     font-weight: 700;
     font-family: 'Montserrat','Montserrat Alternates', sans-serif;
     line-height: 49px;
-    display: flex;
+    display: fle;
     align-items: center;
 
 }
@@ -85,46 +76,49 @@ h1, h5 {
     top: 1762.51px;
     font-style: normal;
 
+
 }
-@media (max-width: 1024px) {
-    .cta {
-    background-attachment: scroll;
-    }
-}
-@media (max-width: 830px) {
+
+@media (max-width: 50%) {
     .form-inline {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        /* align-items: stretch; */
+        justify-content: space-between;
     }
 }
 
+
+.btn-warning{
+    margin-left: 5%;
+    width: 45%;
+} 
+
+#phone{
+    width: 50%;
+}
+
 .img-responsive{
-    width: 290px;
-    height: 448px;
-    left: 1541px;
-    
-}
-/*@media (min-width: 769px) {
-    .btn-warning{
+    margin-top: -35%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    }
 }
-*/
 
 /*--------------------------------------------------------------
 # Submit Form
 --------------------------------------------------------------*/
+.map {
+    max-width: 99%;
+    margin: 30px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    overflow: hidden;
 
-.map{
-    margin-top: 20px;
 }
-.col-lg-3{
-    display:flex;
-    border-radius: 12px;
-    
-}
+
 .form-check-label{
     color:#ffffff;
 }
+
