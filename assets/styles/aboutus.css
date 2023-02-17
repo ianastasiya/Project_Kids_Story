@@ -274,8 +274,6 @@ main {
   grid-gap: 1rem;
   position: relative;
   overflow: hidden;
-  /*background-image: url(assets/images/yellow_wave.png);
-  background-position: center;*/
 }
 
 /*Фоновая картинка*/
@@ -330,81 +328,150 @@ main {
   line-height: 19.5px;
 }
 /*Форма задать вопрос*/
-.questions {
-  background-color: #e77cd9;
-  display: flex;
-  overflow: hidden;
-  color: #ffffff;
-}
-
-.questions_section {
-  flex: 0 0 100%;
-  display: flex;
-}
-
-.questions__text {
-  max-width: 1844px;
-  padding: 0px 20px;
-  margin: 0px 20px;
-  display: flex;
-  align-items: center;
-}
-
-.questions__body {
-  width: 50%;
-  padding: 10px 0 10px 0;
-}
-
-/*Обертка для кнопок*/
-.questions__shell-button {
-  display: flex;
-}
-
-/*Кнопка формы с вопросами*/
-.questions__button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px;
-  gap: 10px;
-  border-radius: 50px;
-}
-
-.questions__button_tel {
-  background: #ffffff;
-}
-
-.questions__button_send {
-  color: #ffffff;
-  background: #f6b31f;
-}
-
-/*Картинка формы с вопросами*/
-.questions__img {
+.form_style {
   max-width: 100%;
-  position: relative;
-  flex: 0 0 50%;
-  transform: translate(-50%, 0px);
+  max-height: 385px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+  background: #f3acc8;
+  border-radius: 20px;
+  display: flex;
 }
 
-.questions__img img {
-  position: absolute;
-  width: 100%;
+/*Обертка для текстовой части формы*/
+.form {
+  width: 50%;
   height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+}
+
+/*Заголовок текстовой части*/
+.form_title {
+  font-weight: 700;
+  font-size: 2.8vw;
+  color: #ffffff;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+/*Строчка оставить телефон*/
+.form_disc {
+  margin-top: 2%;
+  margin-left: 10%;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #ffffff;
+}
+
+/*Обертка формы обратной связи*/
+.form_callback {
+  margin-top: 2%;
+  margin-left: 10%;
+  display: flex;
+}
+
+/*Кнопка оставить свой телефон*/
+.input_phone {
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  width: 45%;
+  height: 2.4rem;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  font-family: "Montserrat";
+}
+
+/*Кнопка отправить*/
+.form_callback_button {
+  width: 45%;
+  height: auto;
+  background: #f6b31f;
+  border-radius: 50px;
+  border: none;
+  max-height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3vw;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.form_callback_button:hover {
+  background: #cf961a;
+}
+
+/*Пользовательское соглашение*/
+.round {
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.round label {
+  margin-left: 1%;
+  width: auto;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68%;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid white;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.4vw;
+}
+
+.checkbox:checked {
+  background-color: #f6b31f;
+}
+
+/*Обертка части с картинкой*/
+.form_pict {
+  width: 50%;
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.blob {
+  position: absolute;
+  width: 110%;
+  height: auto;
+  align-self: center;
+}
+
+.girl {
+  position: absolute;
+  height: 110%;
 }
 
 /*Карта*/
 .map {
-  max-width: 99%;
-  margin: 10px;
+  max-width: 100%;
+  margin: 15px;
+  margin-top: 2%;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   object-fit: cover;
   display: block;
   overflow: hidden;
