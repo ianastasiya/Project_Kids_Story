@@ -1,4 +1,4 @@
-
+/*МЕНЮ*/
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
@@ -95,7 +95,6 @@ a {
       cursor: pointer;
 
 }
-
 
 .header-contact {
     max-width: 700px;
@@ -397,6 +396,57 @@ a {
     position: absolute;
   }
 
+  /*ИНФОРМАЦИЯ*/
+.information {
+    background-image: url("../images/Vector\ Welle.png");
+    width: 100%;
+    object-fit: contain;
+  }
+  .info-content {
+    width: 100%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: center;
+  }
+  .info-rectangle {
+    min-height: 100px;
+    border-radius: 0 0 13px 13px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-content: center;
+    position: relative;
+    top: -32px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .info-square-yellow {
+    background-color: #f6b31f;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: auto;
+  }
+  .info-square-blue {
+    background-color: #8081bd;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: auto;
+  }
+  .info-square-pink {
+    background-color: #f3acc8;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: auto;
+  }
+  
+
   /*мальчик*/
 
 @font-face {
@@ -419,8 +469,6 @@ a {
     width: 50%;
     height: 100%;
  }
-
-
 
  .form_title_boy {
     font-family: 'Montserrat';
@@ -548,13 +596,16 @@ align-self: center;
 
 .heading{
     margin-left: 100px;
+    margin-top: 20%;
 }
 
 .blue{
     color: blue;
+
 }
 .red{
     color: red;
+
 }
 .image {
     margin: 0px auto;
@@ -604,7 +655,7 @@ align-self: center;
 
 .form_label{
     position: absolute;
-    top: 1750px;
+    top: 2700px;
     left: 50px;
    
 }
@@ -633,6 +684,7 @@ align-self: center;
     border: none;
     width: 80%;
     height: auto;
+    color: white;
     font-family: 'Montserrat';
    
 }
@@ -642,4 +694,126 @@ align-self: center;
     margin-right: 3%;
   
 }
+ /*Доп услуги*/
+ .heading-two{
+    display: flex;
+    justify-content: center;
+ }
 
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.services{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+   margin: 15px;
+    border-radius: 5px;
+    height: 100px;
+    width: 300px;
+
+}
+.blok{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+
+}
+
+/*Преимузество*/
+
+.main_blockPerf {
+    width: 100%;
+position: relative;
+}
+
+.wave {
+    width: 100%;
+    position: relative;
+}
+
+.backPict {
+/*max-width: 1804px;*/
+width: 96%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+position: absolute;
+margin-top: -15%;
+display: flex;
+flex-direction: column;
+}
+
+.block_title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 2vw;
+line-height: 49px;
+color: #8081BD;
+}
+
+.perfDisc {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-top: 2%;
+color: #334155;
+}
+
+.oneblock_style {
+    display: flex;
+    margin-top: 2%;
+}
+
+.block_pict {
+    width: 6rem;
+    border-radius: 20px;
+}
+
+.pict_block {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+width: auto;
+height: auto;
+}
+
+.oneblock_style {
+    display: flex;
+align-items:center;
+width: 33.3%;
+}
+
+.block_style {
+    display: flex;
+}
+
+.block-text {
+    margin-left: 5%;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 1.2vw;
+color: #334155;
+}
+
+
+@media all and(max-width:800px) {
+    .form_label {
+        position: absolute;
+        top: 4023px;
+        left: 50px;
+    }
+}
+@media all and(max-width:500px) {
+    .form_label {
+        position: absolute;
+        top: 4023px;
+        left: 50px;
+    }
+}
