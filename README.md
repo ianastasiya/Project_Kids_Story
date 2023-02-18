@@ -26,5 +26,5 @@ ___
   <li>Download the [Git](https://git-scm.com/about/free-and-open-source) is a free and open source distributed version control system.</li>
 <ul>
   
-  <h2>Figma prototype</h2>
-  Here is a link to the [Figma design](https://www.figma.com/file/mMMRODuJ4yWrogtvo8JsQy/Kids-story?node-id=18%3A1818&t=8SQgvpT5W4RfoHmO-0)
+<h2>Figma prototype</h2>
+<p>Here is a link to the [Figma design](https://www.figma.com/file/mMMRODuJ4yWrogtvo8JsQy/Kids-story?node-id=18%3A1818&t=8SQgvpT5W4RfoHmO-0)</p>
