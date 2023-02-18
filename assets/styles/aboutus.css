@@ -5,6 +5,146 @@
   font-style: normal;
 }
 
+/*Стили хедера от Натали*/
+.header {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 96%;
+}
+.adress {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.adress-text,
+.adress-text1 {
+  color: #ea5d4a;
+  min-height: 12px;
+  font-size: 12px;
+}
+.adress-text2 {
+  color: #0e95d3;
+  min-height: 12px;
+  text-align: start;
+  font-size: 12px;
+}
+.logo-info,
+.backcall {
+  display: grid;
+  grid-template-columns: minmax(18%, min-content) minmax(47%, min-content) minmax(
+      35%,
+      min-content
+    );
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-menu {
+  max-width: 549px;
+  display: flex;
+  gap: 1%;
+  justify-content: space-around;
+  font-size: 1vw;
+  margin-top: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_drop {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_button {
+  background-image: url(/assets/images/Vector_check.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  height: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header-contact {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: minmax(60%, min-content) minmax(40%, min-content);
+  text-align: center;
+  align-items: center;
+}
+
+.phone {
+  background-color: #ea5d4a;
+  border-radius: 50%;
+  border: 2px solid #ea5d4a;
+}
+
+.number_fonts {
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #334155;
+  margin-left: 3%;
+}
+
+.header-phonnumber {
+  min-width: 55%;
+  display: grid;
+  grid-template-columns:
+    minmax(5%, min-content) minmax(65%, min-content) minmax(15%, min-content)
+    minmax(15%, min-content);
+}
+.header-button {
+  background-color: #8081bd;
+  border: 1px solid #8081bd;
+  border-radius: 20px;
+  color: white;
+  font-size: 1vw;
+  font-family: "Montserrat", sans-serif;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #8b8dc6;
+}
+
+.backcall-text {
+  color: #ea5d4a;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+
+.homepage {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.servicepage {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 25px;
+}
+
+.callback_link {
+  color: #ea5d4a;
+}
+
 main {
   position: relative;
 }
@@ -52,6 +192,7 @@ main {
 
 /*Заголовок информации о руководителе*/
 .centr__text-title {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
@@ -103,7 +244,6 @@ main {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 90%;
   overflow: hidden;
 }
 
@@ -111,6 +251,7 @@ main {
 .section-video__title {
   grid-area: 1 / 1 / 2 / 4;
   padding: 15px;
+  margin-bottom: 10px;
   color: rgb(82, 82, 219);
 }
 
@@ -133,14 +274,18 @@ main {
   grid-gap: 1rem;
   position: relative;
   overflow: hidden;
-  /*background-image: url(assets/images/yellow_wave.png);
-  background-position: center;*/
 }
 
+/*Фоновая картинка*/
 .background__img {
+  position: relative;
+}
+.background__img-wave {
   position: absolute;
   z-index: -1;
   margin-top: -30lvh;
+  max-width: 100%;
+  width: 100%;
 }
 
 /*Раздел доп. информации*/
@@ -183,65 +328,238 @@ main {
   line-height: 19.5px;
 }
 /*Форма задать вопрос*/
-.questions {
-  background-color: #e77cd9;
-  display: flex;
-  overflow: hidden;
-
-  /* display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 1fr 4fr 1fr;
-  background-color: #e77cd9;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;*/
-}
-
-.questions_section {
-  flex: 0 0 100%;
-  display: flex;
-}
-
-.questions__text {
-  max-width: 1844px;
-  padding: 0px 20px;
-  margin: 0px 20px;
-  display: flex;
-  align-items: center;
-  /*grid-area: 2 / 1 / 3 / 2;*/
-}
-
-.questions__body {
-  width: 50%;
-  padding: 10px 0 10px 0;
-}
-
-.questions__img {
+.form_style {
   max-width: 100%;
-  position: relative;
-  flex: 0 0 50%;
-  transform: translate(-100%, 0px);
-  /*grid-area: 1 / 2 / 4 / 3;*/
+  max-height: 385px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+  background: #f3acc8;
+  border-radius: 20px;
+  display: flex;
 }
 
-.questions__img img {
-  position: absolute;
-  width: 100%;
+/*Обертка для текстовой части формы*/
+.form {
+  width: 50%;
   height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+}
+
+/*Заголовок текстовой части*/
+.form_title {
+  font-weight: 700;
+  font-size: 2.8vw;
+  color: #ffffff;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+/*Строчка оставить телефон*/
+.form_disc {
+  margin-top: 2%;
+  margin-left: 10%;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #ffffff;
+}
+
+/*Обертка формы обратной связи*/
+.form_callback {
+  margin-top: 2%;
+  margin-left: 10%;
+  display: flex;
+}
+
+/*Кнопка оставить свой телефон*/
+.input_phone {
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  width: 45%;
+  height: 2.4rem;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  font-family: "Montserrat";
+}
+
+/*Кнопка отправить*/
+.form_callback_button {
+  width: 45%;
+  height: auto;
+  background: #f6b31f;
+  border-radius: 50px;
+  border: none;
+  max-height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3vw;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.form_callback_button:hover {
+  background: #cf961a;
+}
+
+/*Пользовательское соглашение*/
+.round {
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.round label {
+  margin-left: 1%;
+  width: auto;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68%;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid white;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.4vw;
+}
+
+.checkbox:checked {
+  background-color: #f6b31f;
+}
+
+/*Обертка части с картинкой*/
+.form_pict {
+  width: 50%;
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.blob {
+  position: absolute;
+  width: 110%;
+  height: auto;
+  align-self: center;
+}
+
+.girl {
+  position: absolute;
+  height: 110%;
 }
 
 /*Карта*/
 .map {
-  max-width: 99%;
-  margin: 10px;
+  max-width: 100%;
+  margin: 15px;
+  margin-top: 2%;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   object-fit: cover;
   display: block;
   overflow: hidden;
+}
+
+/*Футер*/
+.test {
+  color: rgb(23, 216, 216);
+}
+
+/* для устройств с шириной области просмотра до 736px */
+@media screen and (max-width: 736px) {
+  /*Блок о руководителе*/
+  .centr {
+    margin: 5px;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  /*Заголовок блока о руководителе*/
+  .centr__title {
+    grid-area: auto;
+    padding: 5px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /*Фото руководителя*/
+  .centr__img {
+    grid-area: auto;
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  /*Информация о руководителе*/
+  .centr__text {
+    grid-area: auto;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  /*Заголовок информации о руководителе*/
+  .centr__text-title {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #8081bd;
+  }
+
+  /*Фамилия руководителя*/
+  .centr__text-surname {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #8081bd;
+  }
+
+  /*Имя и отчество руководителя*/
+  .centr__text-surname {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*SV руководителя*/
+  .centr__text-sv {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+
+  /*Основной текст*/
+  .centr__text-piece {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* для устройств с шириной области просмотра от 737px до 1023px */
+@media screen and (min-width: 737px) and (max-width: 1023px) {
 }
