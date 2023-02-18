@@ -15,12 +15,12 @@ ___
 * Figma
 ___
 
-<h2>Installation</h2>
+#### Installation
 <p> To run a code, you need to download the following tools:</p>
 <ul>
   <li>Download the [Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534107) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</li>
   <li>Download the [Git](https://git-scm.com/about/free-and-open-source) is a free and open source distributed version control system.</li>
-<ul>
-  
-<h2>Figma prototype</h2>
+</ul>
+
+#### Figma prototype
 <p>Here is a link to the [Figma design](https://www.figma.com/file/mMMRODuJ4yWrogtvo8JsQy/Kids-story?node-id=18%3A1818&t=8SQgvpT5W4RfoHmO-0)</p>
