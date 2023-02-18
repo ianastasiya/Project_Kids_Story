@@ -144,8 +144,19 @@ a:hover {
     font-size: 10px;
     margin-left: 5%;
     margin-top: -4%;
-  }
-
+}
+.homepage {
+    text-decoration: none;
+    color:#334155;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+.servicepage {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 9px;
+}
 h1, h5 {
     color: #8081BD;
     font-family: 'Montserrat','Montserrat Alternates', sans-serif;
