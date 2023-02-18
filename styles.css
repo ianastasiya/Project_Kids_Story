@@ -82,6 +82,7 @@ a {
 .menu_drop {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .nav_button {
