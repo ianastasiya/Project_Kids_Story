@@ -421,7 +421,7 @@ h1{
 }
 
 @media (min-width: 768px) {
-    .logo-info-mobile, .excursion, .btn, .form_style-mobile  {
+    .logo-info-mobile, .excursion, .btn, .form_style-mobile, .footer-mobile  {
         display: none;
     }
     .content-service {
