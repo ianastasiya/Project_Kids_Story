@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  }
+
+  .form_style {
+    max-width: 1804px;
+    max-height: 385px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10%;
+    background: #8081BD;
+    border-radius: 20px;
+    display: flex;
+  } 
+  .form {
+    width: 50%;
+    
+  }
+  .form_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8vw;
+    color: #FFFFFF;
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+  .form_disc {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #FFFFFF;
+  }
+  .form_callback {
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+  }
+  .input_phone {
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    width: 45%;
+    height: 2.4rem;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    font-family: 'Montserrat';
+  }
+  .form_callback_button {
+    width: 45%;
+    max-height: 40px;
+    background: #F6B31F;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+.form_callback_button:hover {
+    background: #cf961a;   
+}
+
+.round {
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  .round label {
+    margin-left: 1%;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68%;
+    line-height: 12px;
+    color: #FFFFFF;
+  }
+  .checkbox{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid white;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.4vw;
+  }
+  .checkbox:checked {
+    background-color: #F6B31F;
+  }
+
+  .form_pict {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+} 
+
+  .blob {
+position: absolute;
+width: 110%;
+height: auto;
+align-self: center;
+}
+
+.boy {
+    position: absolute;
+    height: 110%;
+
+}
+@media (max-width: 767px) {
+  .form_style {
+    display: none;
+  }
+  .form_style-mobile {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    max-width: 1804px;
+    min-height: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10%;
+    background: #8081BD;
+    border-radius: 20px;
+  }
+  .form_pict-mobile {
+    min-height: auto;
+    display: flex;
+  
+  }
+}
