@@ -1,0 +1,1013 @@
+* {
+  padding: 0;
+  outline: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+}
+
+/*Стили хедера от Натали*/
+/*Обертка хедера*/
+.header {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 96%;
+}
+
+/*Обертка блока с адресами*/
+.adress {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.adress-text,
+.adress-text1 {
+  color: #ea5d4a;
+  min-height: 12px;
+  font-size: 12px;
+}
+
+.adress-text2 {
+  color: #0e95d3;
+  min-height: 12px;
+  text-align: start;
+  font-size: 12px;
+}
+
+.logo-info,
+.backcall {
+  display: grid;
+  grid-template-columns: minmax(18%, min-content) minmax(47%, min-content) minmax(
+      35%,
+      min-content
+    );
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Меню хедера*/
+.header-menu {
+  max-width: 549px;
+  display: flex;
+  gap: 1%;
+  justify-content: space-around;
+  font-size: 1vw;
+  margin-top: 3%;
+}
+
+.header-menu a:hover {
+  color: red;
+}
+
+.menu_drop a,
+.menu_other a,
+.backcall-text a {
+  text-decoration: none;
+}
+
+.menu_other a {
+  margin-right: 3px;
+}
+
+/*Обертка пункта меню хедера*/
+.menu_drop {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/*Обертка выпадающего меню*/
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+/*Кнопка, за которой выпадающее меню*/
+.nav_button {
+  background-image: url(/assets/images/Vector_check.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  height: 12px;
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+/*Выпадающее меню*/
+.drop-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: min-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.drop-content a:hover {
+  background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.drop:hover .drop-content {
+  display: block;
+}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.drop:hover .nav_button {
+  background-color: #dfe20c;
+}
+
+/*Контакты хедера*/
+.header-contact {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: minmax(60%, min-content) minmax(40%, min-content);
+  text-align: center;
+  align-items: center;
+}
+
+.phone {
+  background-color: #ea5d4a;
+  border-radius: 50%;
+  border: 2px solid #ea5d4a;
+}
+
+/*Обертка контактов*/
+.header-phonnumber {
+  min-width: 55%;
+  display: grid;
+  grid-template-columns:
+    minmax(5%, min-content) minmax(65%, min-content) minmax(15%, min-content)
+    minmax(15%, min-content);
+}
+
+/*Номер телефона*/
+.number_fonts {
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #334155;
+  margin-left: 3%;
+}
+
+/*Кнопка хедера "Записаться на экскурсию"*/
+.header-button {
+  background-color: #8081bd;
+  border: 1px solid #8081bd;
+  border-radius: 20px;
+  color: white;
+  font-size: 1vw;
+  font-family: "Montserrat", sans-serif;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+/*Изменение кнопки хедера "Записаться на экскурсию" при наведении курсора*/
+.header-button:hover {
+  background-color: #8b8dc6;
+}
+
+/*Заказать обратный звонок*/
+.backcall-text {
+  color: #ea5d4a;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+
+.homepage {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.servicepage {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 25px;
+}
+
+.callback_link {
+  color: #ea5d4a;
+}
+
+main {
+  position: relative;
+}
+
+/*Блок о руководителе*/
+.centr {
+  margin: 7px;
+  min-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  /*grid-template-rows: 10% 90%;*/
+  grid-gap: 5px;
+  color: #334155;
+}
+
+/*Заголовок блока о руководителе*/
+.centr__title {
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #8081bd;
+}
+
+/*Фото руководителя*/
+.centr__img {
+  grid-area: 2 / 1 / 3 / 2;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+/*Информация о руководителе*/
+.centr__text {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+/*Заголовок информации о руководителе*/
+.centr__text-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #8081bd;
+}
+
+/*Фамилия руководителя*/
+.centr__text-surname {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #8081bd;
+}
+
+/*Имя и отчество руководителя*/
+.centr__text-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*SV руководителя*/
+.centr__text-sv {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+
+/*Основной текст*/
+.centr__text-piece {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*Слоган*/
+.centr__text-slogan {
+  color: red;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*Текст списком*/
+.centr__text-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*Заголовок блока с видео*/
+.section-video__title {
+  padding: 15px;
+  margin-bottom: 10px;
+  color: rgb(82, 82, 219);
+  font-size: 40px;
+  line-height: 49px;
+}
+
+/*Блок с видео*/
+.section-video {
+  margin: 10px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Видео ролики*/
+.section-video__video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+/*Допоплнительная информация*/
+.section-information {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Фоновая картинка*/
+.background__img {
+  position: relative;
+}
+.background__img-wave {
+  position: absolute;
+  z-index: -1;
+  margin-top: -13lvh;
+  max-width: 100%;
+  width: 100%;
+}
+
+/*Раздел доп. информации*/
+.section-information__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+/*Свойства иконки раздела доп. информации*/
+.section-information__icon {
+  width: 66px;
+  height: 66px;
+  margin: auto;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Цвет иконки раздела доп. информации оранжевый*/
+.section-information__icon_orange {
+  background-color: #f6b31f;
+}
+
+/*Цвет иконки раздела доп. информации розовый*/
+.section-information__icon_pink {
+  background-color: #dd4bca;
+}
+
+/*Цвет иконки раздела доп. информации синий*/
+.section-information__icon_blue {
+  background-color: #4e3edd;
+}
+
+/*Свойства надписи в разделе доп. информации*/
+.section-information__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+/*Форма задать вопрос*/
+.form_style {
+  max-width: 100%;
+  max-height: 385px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+  background: #f3acc8;
+  border-radius: 20px;
+  display: flex;
+}
+
+/*Обертка для текстовой части формы*/
+.form {
+  width: 50%;
+}
+
+/*Заголовок текстовой части*/
+.form_title {
+  font-weight: 700;
+  font-size: 2.8vw;
+  color: #ffffff;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+/*Строчка оставить телефон*/
+.form_disc {
+  margin-top: 2%;
+  margin-left: 10%;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #ffffff;
+}
+
+/*Обертка формы обратной связи*/
+.form_callback {
+  margin-top: 2%;
+  margin-left: 10%;
+  display: flex;
+}
+
+/*Кнопка оставить свой телефон*/
+.input_phone {
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  width: 45%;
+  height: 2.4rem;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  font-family: "Montserrat";
+}
+
+/*Кнопка отправить*/
+.form_callback_button {
+  width: 45%;
+  height: auto;
+  background: #f6b31f;
+  border-radius: 50px;
+  border: none;
+  max-height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3vw;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.form_callback_button:hover {
+  background: #cf961a;
+}
+
+/*Пользовательское соглашение*/
+.round {
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.round label {
+  margin-left: 1%;
+  width: auto;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 68%;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid white;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.4vw;
+}
+
+.checkbox:checked {
+  background-color: #f6b31f;
+}
+
+/*Обертка части с картинкой*/
+.form_pict {
+  width: 50%;
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.blob {
+  position: absolute;
+  width: 110%;
+  height: auto;
+  align-self: center;
+}
+
+.girl {
+  position: absolute;
+  height: 110%;
+}
+
+/*Карта*/
+.map-container {
+  max-width: 100%;
+  margin-top: 2%;
+  display: flex;
+  overflow: hidden;
+}
+
+.map {
+  max-width: 100%;
+  margin: 15px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+/*Футер*/
+.test {
+  color: rgb(23, 216, 216);
+}
+
+/* для устройств с шириной области просмотра до 576px */
+@media screen and (max-width: 576px) {
+  /*Обертка блока с адресами*/
+  .adress {
+    display: none;
+  }
+
+  /* .menu_drop a {
+    display: inline-block;
+    background: #c2f272;
+    font-size: 1.4em;
+    text-align: center;
+    width: 24%;
+  }
+  .menu_drop a:hover {
+    background: #f2d272;
+  }
+  .menu_drop a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    width: 100%;
+  }*/
+
+  /*Блок о руководителе*/
+  .centr {
+    margin: 5px;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+  }
+
+  /*Заголовок блока о руководителе*/
+  .centr__title {
+    grid-area: auto;
+    padding: 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /*Фото руководителя*/
+  .centr__img {
+    grid-area: auto;
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  /*Информация о руководителе*/
+  .centr__text {
+    grid-area: auto;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  /*Заголовок информации о руководителе*/
+  .centr__text-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*Фамилия руководителя*/
+  .centr__text-surname {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /*Имя и отчество руководителя*/
+  .centr__text-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*SV руководителя*/
+  .centr__text-sv {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /*Основной текст*/
+  .centr__text-piece {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /*Слоган*/
+  .centr__text-slogan {
+    font-size: 12px;
+    line-height: 15px;
+    word-wrap: break-word;
+  }
+
+  /*Теск списком*/
+  .centr__text-list {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+
+  /*Заголовок блока с видео*/
+  .section-video__title {
+    padding: 15px;
+    margin-bottom: 1px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  /*Блок с видео*/
+  .section-video {
+    margin: 10px;
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  /*Видео ролики*/
+  .section-video__video {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  /*Фоновая картинка*/
+  .background__img-wave {
+    margin-top: 28lvh;
+  }
+
+  /*Допоплнительная информация*/
+  .section-information {
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+  }
+
+  /*Раздел доп. информации*/
+  .section-information__item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 1rem;
+  }
+
+  /*Свойства иконки раздела доп. информации*/
+  .section-information__icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  /*Свойства надписи в разделе доп. информации*/
+  .section-information__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /*Форма задать вопрос*/
+  .form_style {
+    display: flex;
+  }
+
+  /*Обертка для текстовой части формы*/
+  .form {
+    width: 50%;
+  }
+
+  /*Заголовок текстовой части*/
+  .form_title {
+    font-weight: 700;
+    font-size: 2.8vw;
+    color: #ffffff;
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+
+  /*Строчка оставить телефон*/
+  .form_disc {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #ffffff;
+  }
+
+  /*Обертка формы обратной связи*/
+  .form_callback {
+    margin-top: 2%;
+    margin-left: 10%;
+    display: block;
+  }
+
+  /*Кнопка оставить свой телефон*/
+  .input_phone {
+    background: #ffffff;
+    border-radius: 50px;
+    border: none;
+    width: 45%;
+    height: 2.4rem;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    font-family: "Montserrat";
+  }
+
+  /*Кнопка отправить*/
+  .form_callback_button {
+    width: 45%;
+    height: auto;
+    background: #f6b31f;
+    border-radius: 50px;
+    border: none;
+    max-height: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .form_callback_button:hover {
+    background: #cf961a;
+  }
+
+  /*Пользовательское соглашение*/
+  .round {
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+
+  .round label {
+    margin-left: 1%;
+    width: auto;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68%;
+    line-height: 12px;
+    color: #ffffff;
+  }
+
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid white;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.4vw;
+  }
+
+  .checkbox:checked {
+    background-color: #f6b31f;
+  }
+
+  /*Обертка части с картинкой*/
+  .form_pict {
+    width: 50%;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .blob {
+    position: absolute;
+    width: 110%;
+    height: auto;
+    align-self: center;
+  }
+
+  .girl {
+    position: absolute;
+    height: 110%;
+  }
+
+  /*Карта*/ /*
+  .map-container {
+    max-width: 100%;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .map {
+    max-width: 100%;
+    margin: 15px;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+  }*/
+}
+/* для устройств с шириной области просмотра от 577px до 1023px */
+@media screen and (min-width: 577px) and (max-width: 1023px) {
+  /*Блок с адресами*/
+  .adress-text,
+  .adress-text1 {
+    font-size: 10px;
+  }
+
+  .adress-text2 {
+    font-size: 10px;
+  }
+
+  .menu_other {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .header-phonnumber {
+    justify-items: center;
+  }
+
+  .header-button {
+    display: flex;
+    font-size: 0.8vw;
+    font-family: "Montserrat", sans-serif;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*Блок о руководителе*/
+  .centr {
+    margin: 7px;
+    min-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /*grid-template-rows: 10% 90%;*/
+    grid-gap: 5px;
+    color: #334155;
+  }
+
+  /*Заголовок блока о руководителе*/
+  .centr__title {
+    padding: 9px;
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  /*Информация о руководителе*/
+  .centr__text {
+    padding: 7px;
+  }
+
+  /*Заголовок информации о руководителе*/
+  .centr__text-title {
+    font-size: 27px;
+    line-height: 31px;
+  }
+
+  /*Фамилия руководителя*/
+  .centr__text-surname {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /*Имя и отчество руководителя*/
+  .centr__text-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /*SV руководителя*/
+  .centr__text-sv {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  /*Основной текст*/
+  .centr__text-piece {
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  /*Слоган*/
+  .centr__text-slogan {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  /*Текст списком*/
+  .centr__text-list {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  /*Заголовок блока с видео*/
+  .section-video__title {
+    margin-bottom: 1px;
+    font-size: 33px;
+    line-height: 39px;
+  }
+
+  /*Блок с видео*/
+  .section-video {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*Видео ролики*/
+  .section-video__video {
+    padding: 10px;
+  }
+
+  /*Фоновая картинка*/
+  .background__img-wave {
+    margin-top: 0lvh;
+  }
+
+  /*Допоплнительная информация*/
+  .section-information {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  /*Свойства надписи в разделе доп. информации*/
+  .section-information__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

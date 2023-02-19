@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/styles/aboutus.css" />
+    <link rel="stylesheet" href="assets/styles.css/normalize.css">
+    <link rel="stylesheet" href="assets/styles.css/aboutus.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,30 +24,83 @@
   <body>
     <!--header start-->
     <header class="header">
-      <div class="logo">
-        <img src="assets/images/logo.png" alt="logotip" />
+      <div class="adress">
+        <p class="adress-text">Москва, ул. Муравская д.38, кв.1</p>
+        <p class="adress-text1">ЖК Мир Митино</p>
+        <p class="adress-text2">М. Пятницкое шоссе</p>
       </div>
-      <!--menu start-->
-      <nav class="menu">
-        <a class="menu__item" href="about.html">О нас</a>
-        <a class="menu__item" href="about.html">Расписание</a>
-        <a class="menu__item" href="about.html">Программа</a>
-        <a class="menu__item" href="about.html">Фото и видео</a>
-        <a class="menu__item" href="about.html">Команда</a>
-        <a class="menu__item" href="about.html">Контакты</a>
-        <address class="menu__item menu__address">
-          <img src="assets/images/telephone.png" alt="phone icon" /> +7 495 123
-          34 25
-        </address>
-        <a class="menu__item" href="https://vk.com">
-          <img src="assets/images/VK.png" alt="vk icon"
-        /></a>
-        <a class="menu__item" href="https://telegram.com">
-          <img src="assets/images/Teleg.png" alt="telegram icon"
-        /></a>
-        <button class="menu__button">Записаться на экскурсию</button>
-      </nav>
-      <!--menu and-->
+      <div class="logo-info">
+        <div class="header_logo">
+          <div class="logo">
+            <img
+              class="logo-img"
+              src="assets/images/logo.png"
+              alt="kidsstory"
+            />
+          </div>
+        </div>
+        <div>
+          <nav class="header-menu">
+            <div class="menu_drop">
+              <a href="#">О нас</a>
+              <div class="drop">
+                <button class="nav_button"></button>
+                <div class="drop-content">
+                  <a href="aboutus.html">О центре</a>
+                  <a href="service.html">Дополнительные услуги</a>
+                  <a href="news.html">Новости</a>
+                </div>
+              </div>
+            </div>
+            <div class="menu_drop">
+              <a href="#">Расписание</a>
+              <button class="nav_button"></button>
+            </div>
+            <div class="menu_drop">
+              <a href="#">Программа</a>
+              <button class="nav_button"></button>
+            </div>
+            <div class="menu_other">
+              <a href="#">Фото и видео</a>
+              <a href="#">Команда</a>
+              <a href="#">Контакты</a>
+            </div>
+          </nav>
+        </div>
+        <div class="header-contact">
+          <div class="header-phonnumber">
+            <div>
+              <img
+                class="phone"
+                src="/assets/images/telephone.png"
+                alt="phone"
+              />
+            </div>
+            <div class="number_fonts">+7 495 123 34 25</div>
+            <a class="vkontakte" href="#"><img
+              src="/assets/images/VK.png"
+              alt="vkontakte"
+            /></a>
+            <a class="telegram" href="#"><img
+              src="/assets/images/Teleg.png"
+              alt="telegram"
+            /></a>
+          </div>
+          <button class="header-button">Записаться на экскурсию</button>
+        </div>
+      </div>
+      <div class="backcall">
+        <div></div>
+        <div></div>
+
+        <div class="backcall-text">
+          <a href="#" class="callback_link">Заказать обратный звонок</a>
+        </div>
+      </div>
+      <div class="pagename">
+        <a class="homepage" href="#">Главная</a>
+        <a class="servicepage" href="#">О центре</a>
+    </div>  
     </header>
     <!--header and-->
     <!--main start-->
@@ -60,73 +114,68 @@
           alt="Foto our director"
         />
         <div class="centr__text">
-          <span class="centr__text-title">
-            <h3>Руководитель</h3>
-            <h3>Kids story</h3>
-          </span>
+          <p class="centr__text-title">Руководитель</p>
+          <p class="centr__text-title">Kids story</p>
           <p class="centr__text-surname">ЖУРАВЛЕВ</p>
           <p class="centr__text-name">Дмитрий Анатольевич</p>
-
           <p class="centr__text-sv">Педагог-психолог</p>
           <p class="centr__text-sv">Стаж 11 лет</p>
           <br />
-          <span class="centr__text-piece">
-            <p>
-              Мы создали пространство, в котором каждый ребенок проявляет и
-              раскрывает себя , развивает индивидуальные особенности и таланты.
-            </p>
-            <p>
-              <span class="centr__text-slogan"
-                >Наша задача - сделать так, чтобы каждый день в Kids story был
-                счастливым.
-              </span>
-            </p>
-            <ul>
-              <li>
-                Английский детский клуб. Для детей с 2 до 7 лет. Погружение в
-                языковую среду, собственная кухня, охраняемая огороженная
-                территория, медицинский кабинет, соляная пещера.
-              </li>
-              <li>
-                Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие
-                студии, творческие мастерские, спортивные секции.
-              </li>
-              <li>Kids story - "ежедневное развитие детей на 360 градусов".</li>
-            </ul>
+          <p class="centr__text-piece">
+            Мы создали пространство, в котором каждый ребенок проявляет и
+            раскрывает себя , развивает индивидуальные особенности и таланты.
+          </p>
+          <span class="centr__text-slogan">Наша задача - сделать так, чтобы каждый день в Kids story был
+          счастливым.
           </span>
+          
+          <ul class="centr__text-list">
+            <li>
+              Английский детский клуб. Для детей с 2 до 7 лет. Погружение в
+              языковую среду, собственная кухня, охраняемая огороженная
+              территория, медицинский кабинет, соляная пещера.
+            </li>
+            <li>
+              Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие
+              студии, творческие мастерские, спортивные секции.
+            </li>
+            <li>Kids story - "ежедневное развитие детей на 360 градусов".</li>
+          </ul>
+          
         </div>
       </section>
       <!--section centr and-->
       <!--section video start-->
-      <section class="section-video">
+      <section>
         <h2 class="section-video__title">Наш сад в видео</h2>
-        <img
-          class="section-video__video"
-          src="assets/images/video_one.png"
-          alt="Video 1"
-        />
-        <img
-          class="section-video__video"
-          src="assets/images/video_two.png"
-          alt="Video 2"
-        />
-        <img
-          class="section-video__video"
-          src="assets/images/video_three.png"
-          alt="Video 3"
-        />
+        <div class="section-video">
+          <img
+            class="section-video__video"
+            src="assets/images/video_one.png"
+            alt="Video 1"/>
+          <img
+            class="section-video__video"
+            src="assets/images/video_two.png"
+            alt="Video 2"/>
+          <img
+            class="section-video__video"
+            src="assets/images/video_three.png"
+            alt="Video 3"/>
+        </div>
       </section>
       <!--section video and-->
+      <!--background yellow wave start-->
       <div class="background__img">
-        <img src="assets/images/yellow_wave.png" alt="yellow_wave" />
+        <img class="background__img-wave" src="assets/images/yellow_wave.png" alt="yellow_wave"/>
       </div>
+      <!--background yellow wave and-->
       <!--section with additional information start-->
-      <article class="section-information">
+      <div class="section-information">
         <div class="section-information__item">
           <div
             class="section-information__icon section-information__icon_orange"
           >
-            <img src="assets/images/icon_clock.png" alt="icon_clock" />
+            <img src="assets/images/icon_clock.png" alt="icon_clock">
           </div>
           <p class="section-information__text">
             <strong>Часы работы:</strong> с 7:00 до 19:00
@@ -202,33 +251,32 @@
             особенностей ребенка
           </p>
         </div>
-      </article>
+      </div>
       <!--section with additional information and-->
       <!--Form with questions start-->
-      <div class="questions">
-        <section class="questions_section">
-          <div class="questions__text">
-            <section class="questions__body">
-              <h2>Остались вопросы? Получите бесплатную консультацию</h2>
-              <p>
-                Оставьте телефон и мы перезвоним и расскажем все подробности о
-                филиале
-              </p>
-              <button>+7_ _ _-_ _ _-_ _-_ _</button>
-              <button>Отправить</button>
-              <form class="questions__activ">
-                <label for="circle"></label>
-                <input type="radio" id="circle" />
-                Я принимаю условия пользовательского соглашения
-              </form>
-            </section>
-          </div>
-        </section>
-        <img class="questions__img" src="assets/images/Girl.png" alt="Girl" />
-      </div>
+      <div class="form_style">
+        <div class="form">
+             <form>
+                 <div class="form_title">Есть вопросы? Получите бесплатную консультацию</div>
+                 <div class="form_disc">Оставьте телефон и мы перезвоним <br> и расскажем все подробности о филиале</div>
+                 <div class="form_callback">
+                     <input type="tel" placeholder="+7_ _ _ - _ _ _ - _ _ - _ _" class="input_phone">
+                     <button class="form_callback_button">Отправить</button>
+                 </div>
+                 <div class="round">
+                     <input type="checkbox" id="checkbox" class="checkbox">
+                     <label for="checkbox" class="check_agree">Я принимаю условия пользовательского соглашения</label>
+                 </div>
+             </form>
+        </div>
+        <div class="form_pict">
+             <img class="blob" src="/assets/images/girl/Group_4.png" alt="blob" >
+             <img class="girl" src="/assets/images/girl/girl.png" alt="smiling girl with glasses">
+        </div>
+     </div>
       <!--Form with questions and-->
       <!--Map start-->
-      <div class="map">
+      <div class="map-container">
         <img
           class="map"
           src="assets/images/Map.png"
@@ -238,19 +286,18 @@
       <!--Map and-->
     </main>
     <!--main and-->
+    
     <!--footer start-->
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
          <sup><img xmlns src="assets/images/logo.png" width="200" height="50" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></></sup>
-          <small class="d-block mb-1 text"><b> <img xmlns src="assets/images/telephone.png"> +7 495 123 3425</b></small>
+          <small class="d-block mb-1 text"><b><img src="assets/images/telephone.png"> +7 495 123 3425</b></small>
           <small class="d-block mb-3 text-muted"><b>dir@kidsstory</b></small>
           <small class="d-block mb-2 text-muted"><b>Москва, ул.Муравская д.38,к.1</b></small>
           <small class=" test d-block mb-4 "><b>ЖК Мир Митино М.Пятницкое шоссе</b></small>
-          <img xmlns src="assets/vector_2.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
-          <img xmlns src="assets/vector_3.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
-         
-         
+          <img xmlns src="assets/images/vector_2.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
+          <img xmlns src="assets/images/vector_3.png" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
         </div>
         <div class="col-6 col-md">
           <h5>О нас</h5>
@@ -277,35 +324,30 @@
             <li><a class="link-secondary" href="#">Группа(2-3 года)</a></li>
             <li><a class="link-secondary" href="#">Группа(3-5 лет)</a></li>
             <li><a class="link-secondary" href="#">Группа(5-7 лет)</a></li>
-           
-          </ul>
+            </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Фото и видео</h5>
-         
+          <h5>Фото и видео</h5> 
         </div>
         <div class="col-6 col-md">
           <h5>Команда</h5>
-         
         </div>
         <div class="col-6 col-md">
           <h5>Контакты</h5>
-          
         </div>
       </div>
-        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">Copyrights:Kids Story 2021</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Copyrights:Kids Story 2021</p>
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark    text-decoration-none">
             <img  src="assets/images/logo.png" class="bi me-2" width="100" height="30"><use xlink:href="#bootstrap"></use></>
           </a>
-      
+        
           <ul class="nav col-md-4 justify-content-end">
-            
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Дизайн ZHURAVLEV</a></li>
           </ul>
-          <img xmlns src="assets/vector.jpg" width="200" height="60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
-        </div>
+          <img xmlns src="assets/images/vector.jpg" width="200" height="60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></>
+      </footer>
     </footer>
     <!--footer and-->
     <script
