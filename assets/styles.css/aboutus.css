@@ -16,20 +16,20 @@
 }
 
 /*Обертка блока с адресами*/
-.adress {
+.header__adress {
   display: flex;
   justify-content: flex-end;
   gap: 1%;
 }
 
-.adress-text,
-.adress-text1 {
+.header__adress-text,
+.header__adress-text1 {
   color: #ea5d4a;
   min-height: 12px;
   font-size: 12px;
 }
 
-.adress-text2 {
+.header__adress-text2 {
   color: #0e95d3;
   min-height: 12px;
   text-align: start;
@@ -354,9 +354,10 @@ main {
 }
 
 /*Фоновая картинка*/
-.background__img {
+/* .background__img {
   position: relative;
-}
+} */
+
 .background__img-wave {
   position: absolute;
   z-index: -1;
@@ -568,7 +569,7 @@ main {
 /* для устройств с шириной области просмотра до 576px */
 @media screen and (max-width: 576px) {
   /*Обертка блока с адресами*/
-  .adress {
+  .header__adress {
     display: none;
   }
 
@@ -696,7 +697,7 @@ main {
 
   /*Фоновая картинка*/
   .background__img-wave {
-    margin-top: 28lvh;
+    margin-top: 48lvh;
   }
 
   /*Допоплнительная информация*/
@@ -722,6 +723,7 @@ main {
   .section-information__text {
     font-size: 10px;
     line-height: 12px;
+    text-align: center;
   }
 
   /*Форма задать вопрос*/
@@ -881,12 +883,12 @@ main {
 /* для устройств с шириной области просмотра от 577px до 1023px */
 @media screen and (min-width: 577px) and (max-width: 1023px) {
   /*Блок с адресами*/
-  .adress-text,
-  .adress-text1 {
+  .header__adress-text,
+  .header__adress-text1 {
     font-size: 10px;
   }
 
-  .adress-text2 {
+  .header__adress-text2 {
     font-size: 10px;
   }
 
@@ -996,7 +998,7 @@ main {
 
   /*Фоновая картинка*/
   .background__img-wave {
-    margin-top: 0lvh;
+    margin-top: 6lvh;
   }
 
   /*Допоплнительная информация*/
