@@ -56,7 +56,9 @@
   display: flex;
   gap: 1%;
   justify-content: space-around;
+  align-items: center;
   font-size: 1vw;
+  color: #334155;
   margin-top: 3%;
 }
 
@@ -64,55 +66,34 @@
   color: red;
 }
 
-.menu_drop a,
-.menu_other a,
-.backcall-text a {
-  text-decoration: none;
-}
-
-.menu_other a {
-  margin-right: 3px;
-}
-
 /*Обертка пункта меню хедера*/
-.menu_drop {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-/*Обертка выпадающего меню*/
-.drop {
+.header-menu__menudrop {
   position: relative;
   display: inline-block;
 }
 
 /*Кнопка, за которой выпадающее меню*/
-.nav_button {
-  background-image: url(/assets/images/Vector_check.png);
-  background-repeat: no-repeat;
-  background-position: center center;
+.header-menu__button {
   border: none;
-  height: 12px;
   background-color: white;
+  color: #334155;
+  font-size: 14px;
   cursor: pointer;
   padding: 5px;
-  position: relative;
-  display: inline-block;
 }
 
 /*Выпадающее меню*/
 .drop-content {
   display: none;
-  background-color: #f1f1f1;
+  position: absolute;
+  background-color: #f1f1f1fd;
   min-width: min-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .drop-content a {
-  float: none;
-  color: black;
+  color: #334155;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -124,13 +105,25 @@
 }
 
 /* Показать выпадающее меню при наведении курсора */
-.drop:hover .drop-content {
+.header-menu__menudrop:hover .drop-content {
   display: block;
 }
 
 /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.drop:hover .nav_button {
+.header-menu__menudrop:hover .header-menu__button {
   background-color: #dfe20c;
+}
+
+.header-menu__menu-other a,
+.backcall-text a {
+  text-decoration: none;
+}
+
+/*Остальные пункты меню хедера*/
+.header-menu__menu-other a {
+  margin-right: 3px;
+  color: #334155;
+  font-size: 14px;
 }
 
 /*Контакты хедера*/
@@ -195,21 +188,22 @@
   margin-top: -4%;
 }
 
-.homepage {
-  text-decoration: none;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-}
-.servicepage {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  padding: 25px;
-}
-
 .callback_link {
   color: #ea5d4a;
+}
+
+/*Срока в хедере с указанием пути открытой страницы*/
+.header__pagename {
+  margin-top: 20px;
+}
+
+.header__pagename a {
+  text-decoration: none;
+  color: #334155;
+}
+
+.header__servicepage {
+  padding: 25px;
 }
 
 main {
