@@ -79,8 +79,10 @@
   background-color: white;
   color: #334155;
   font-size: 14px;
-  cursor: pointer;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Выпадающее меню*/
@@ -121,6 +123,11 @@
 }
 
 /*Остальные пункты меню хедера*/
+.header-menu__menu-other {
+  min-height: auto;
+  margin-bottom: 13px;
+}
+
 .header-menu__menu-other a {
   margin-right: 3px;
   color: #334155;
